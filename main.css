@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+#main {
+	width:605px;
+	padding:5px;
+	background-color: #fff;
+	border: 8px solid transparent;
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	box-shadow: 0 0 8px rgba(0,0,0,0.3);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+}
+#contGenId {
+	width:600px;
+	max-width:600px;
+	height:300px;
+	max-height:500px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;	
+	line-height:140%;
+	overflow:scroll;
+	overflow-x: hidden;
+	border:0px;
+}
+.formText {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	padding:2px;
+}
+select.selectbox {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	padding:2px;	
+}
+.nav-left {
+	display:block;
+	width:200px;
+	float:left;	
+}
+.nav-right {
+	display:block;
+	width:300px;
+	float:right;
+	text-align:right;
+}
+a:link {
+	text-decoration: none;
+	font-weight: 400;
+	color: #069
+}
+a:visited {
+	text-decoration: none;
+	color: #0088CA
+}
+a:hover {
+	text-decoration: none;
+	color: #F3951F;
+}
+a:active {
+	text-decoration: none;
+	color: #F00;
+}
+a:focus {
+	text-decoration: none;
+	color: #F00;
+}
+
+div#trial-ended {
+	display:none;
+}

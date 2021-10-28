@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Default Text Generator</title>
+<link href='main.css' rel='stylesheet' type='text/css' media='screen'/>
+</head>
+
+<body>
+
+<div id="main">
+	<div id="main-section">
+		<form id="main-form">
+			<label for="pCountId" class="formText">Generate</label>
+			<select class="selectbox" id="pCountId" name="pCount">
+				<option selected="selected" value="1">1 paragraph</option>
+				<option value="2">2 paragraphs</option>
+				<option value="3">3 paragraphs</option>
+				<option value="4">4 paragraphs</option>
+				<option value="5">5 paragraphs</option>
+			</select>
+			<label for="textTypeId" class="formText">with </label>
+			<select class="selectbox" id="paragraphLengthId" name="paragraphLength">
+				<option value="1">1 sentence</option>
+				<option value="2">2 sentences</option>
+				<option value="3">3 sentences</option>
+				<option value="4">4 sentences</option>
+				<option value="5">5 sentences</option>
+				<option value="6">6 sentences</option>
+				<option value="7">7 sentences</option>
+				<option value="8">8 sentences</option>
+				<option value="9">9 sentences</option>
+				<option selected="selected" value="10">10 sentences</option>
+				<option value="11">11 sentences</option>
+				<option value="12">12 sentences</option>
+				<option value="13">13 sentences</option>
+				<option value="14">14 sentences</option>
+				<option value="15">15 sentences</option>
+				<option value="16">16 sentences</option>
+				<option value="17">17 sentences</option>
+				<option value="18">18 sentences</option>
+				<option value="19">19 sentences</option>
+				<option value="20">20 sentences</option>
+			</select>
+			<span class="formText"> per paragraph.</span>
+		</form>
+		<div id="genOptId" style="display:none;">
+			<br/>
+			<table>
+				<tr>
+					<td>
+						<label for="pFormId" class="formText" title="HTML Paragraph Tags &lt;p&gt;&lt;/p&gt;">Paragraph tags? </label>
+					</td>
+					<td>
+						<select class="selectbox" id="pFormId" name="textType">
+							<option selected="selected" value="No">No</option>
+							<option value="Yes">Yes</option>
+						</select>
+					</td>
+				</tr>
+				<tr id="extraSpacers">
+					<td>
+						<label for="breakTypeId" class="formText" title="What type of break would you like to use to separate paragraphs?">Break type:</label>
+					</td>
+					<td>
+					<select class="selectbox" id="breakTypeId" name="breakType">
+						<option selected="selected" value="1" title="\n">Carriage Return</option>
+						<option value="2" title="<br/>">HTML Break</option>
+					</select>
+					</td>
+				</tr>
+				<tr id="spacerCount">
+					<td>
+						<label for="breakTimesId" class="formText" title="How many breaks?">Number of breaks:</label>
+					</td>
+					<td>
+						<select class="selectbox" id="breakTimesId" name="breakTimes">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option selected="selected" value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="selectableId" class="formText">Auto select text?</label>
+					</td>
+					<td>
+					<select class="selectbox" id="selectableId" name="selectable" spellcheck="false">
+							<option value="No">No</option>
+							<option selected="selected" value="Yes">Yes</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					<label for="copyableId" class="formText">Auto copy text?</label>
+					</td>
+					<td>
+					<select class="selectbox" id="copyableId" name="copyable" spellcheck="false">
+							<option selected="selected" value="No">No</option>
+							<option value="Yes">Yes</option>
+					</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br/>
+		<textarea id="contGenId" name="contentArea">
+			</textarea>
+		<br/><br/>
+		<div class="nav-left">
+		<label class="formText"> <a href="#" id="optionsId" title="Show more default text options">More Options</a></label>
+		</div>
+		<div style="clear:both;">
+	</div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
